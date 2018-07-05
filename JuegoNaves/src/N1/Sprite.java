@@ -17,14 +17,14 @@ public class Sprite {
     protected int y;
     protected int width;
     protected int height;
-    protected boolean vis;
+    protected boolean vista;
     protected Image image;
 
     public Sprite(int x, int y) {
 
         this.x = x;
         this.y = y;
-        vis = true;
+        vista = true;
     }
 
     protected void getImageDimensions() {
@@ -53,11 +53,11 @@ public class Sprite {
     }
 
     public boolean isVisible() {
-        return vis;
+        return vista;
     }
 
     public void setVisible(Boolean visible) {
-        vis = visible;
+        vista = visible;
     }
 
     public Rectangle getBounds() {

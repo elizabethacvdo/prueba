@@ -6,7 +6,7 @@
 package juegonaves;
 
 import N1.Sprite;
-import java.awt.Image;
+
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
@@ -18,7 +18,7 @@ public class Nave extends Sprite{
     
     private int dx;
     private int dy;
-    private ArrayList missiles;
+    private ArrayList<Misil> missiles;
     
     
     public Nave(int x, int y) {
@@ -60,7 +60,7 @@ public class Nave extends Sprite{
     }
     
     public void fire() {
-        missiles.add(new misil(x + width, y + height / 2));
+        missiles.add(new Misil(x + width, y + height / 2));
     }
     
     
